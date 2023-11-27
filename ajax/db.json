@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Mobiles",
+      "status": "Missed"
+    },
+    {
+      "id": 2,
+      "name": "Laptops",
+      "status": "Available"
+    },
+    {
+      "id": 3,
+      "name": "Shirts",
+      "status": "Upcoming"
+    },
+    {
+      "id": 4,
+      "name": "watches",
+      "status": "Available"
+    },
+    {
+      "id": 5,
+      "name": "Pants",
+      "status": "Missed"
+    }
+  ]
+}

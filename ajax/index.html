@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./assets/js/script.js"></script>
+        <title>Ajax</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body onload="loadData()">
+        <h1 class="text-center m-5 ">Product's List</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-success">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Product Id</th>
+                                    <th scope="col">Product Name</th>
+                                    <th scope="col">Product Status</th>
+                                    <th scope="col">Update</th>
+                                    <th scope="col">Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bodyy">
+                                <!-- Add your table body content here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-6 offset-md-3 text-center align-items-center d-flex flex-column justify-content-center">
+                <h3 class="text-center text-warning" id="instH">Add New Product</h3>
+                <h3 class="text-center text-warning" style="display: none;" id="uppH">Update</h3>
+                <input type="text" class="form-control mb-2 mt-3 border border-dark" placeholder="Product Id" aria-label="Id" style="max-width: 500px;" id="uId">
+                <input type="text" class="form-control mb-2 border border-dark" placeholder="Product Name" aria-label="name" style="max-width: 500px;" id="name">
+                <input type="email" class="form-control border border-dark" placeholder="Product Status" aria-label="mail" style="max-width: 500px;" id="status">
+                <button type="button" class="btn btn-warning m-4" onclick="sendData()" id="sebtn">Send</button>
+                <button type="button" class="btn btn-warning mt-3" onclick="upd()" style="display: none;" id="ubtn">Update</button>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>
